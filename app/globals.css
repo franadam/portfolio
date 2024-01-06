@@ -4,6 +4,6 @@
 
 @layer base {
   html {
-    @apply text-gray-100;
+    @apply text-gray-100  bg-blue-950 scroll-smooth;
   }
 }

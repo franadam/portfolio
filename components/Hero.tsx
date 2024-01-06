@@ -6,7 +6,10 @@ import heroSVG from '../assets/images/hero.svg';
 
 export const Hero: FC = (): JSX.Element => {
   return (
-    <div className="bg-blue-600 py-24">
+    <div
+      className="bg-blue-600 py-24 lg:min-h-screen"
+      id="home"
+    >
       <div className="align-element grid md:grid-cols-2 items-center gap-8">
         <article>
           <h1 className="text-7xl font-bold tracking-wider">

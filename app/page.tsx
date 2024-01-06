@@ -1,10 +1,11 @@
-import { Hero, Navbar } from '@/components';
+import { Hero, Navbar, Skills } from '@/components';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <Skills />
     </main>
   );
 }
