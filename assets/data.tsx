@@ -9,7 +9,14 @@ import {
   SiOpengl,
 } from 'react-icons/si';
 
-import { ILink, ISkill } from '@/interfaces';
+import { ILink, ISkill, IProject } from '@/interfaces';
+import {
+  medicalSimulation,
+  web3rps,
+  jobster,
+  dishygraph,
+  humanSegmentation,
+} from './images/projects';
 
 export const links: ILink[] = [
   { id: nanoid(), href: '#home', text: 'home' },
@@ -66,5 +73,48 @@ export const skills: ISkill[] = [
     title: 'OpenGL',
     icon: <SiOpengl />,
     text: 'Advanced knowledge in OpenGL for creating sophisticated 3D graphics and simulations, with experience in shader programming and real-time rendering techniques.',
+  },
+];
+
+export const webProjects: IProject[] = [
+  {
+    id: nanoid(),
+    img: web3rps,
+    url: 'https://main--web3rps.netlify.app/',
+    github: 'https://github.com/franadam/web3rps',
+    title: 'Rock Paper Scissors Lizard Spock, Web3 Edition',
+    text: 'Developed a web3 version of the classic game using React, integrating blockchain for secure gameplay. Enabled ETH transactions for stakes and rewards.',
+  },
+  {
+    id: nanoid(),
+    img: jobster,
+    url: 'https://franadam-joby.netlify.app/',
+    github: 'https://github.com/franadam/Joby',
+    title: 'Joby, React App',
+    text: 'A web app for tracking job application progress, using React with TypeScript and Styled Components for the UI, and Redux Toolkit for state management, featuring secure server interactions and real-time user feedback.',
+  },
+  {
+    id: nanoid(),
+    img: dishygraph,
+    github: 'https://github.com/franadam/DishyGraph',
+    title: 'DishyGraph',
+    text: 'An Angular application designed to visualize WHO data on infectious diseases. Built from scratch, it features a performant backend with Express and Node.js, and an Angular frontend with D3.js for dynamic data visualization.',
+  },
+];
+
+export const otherProjects: IProject[] = [
+  {
+    id: nanoid(),
+    img: medicalSimulation,
+    github: 'https://github.com/franadam/MedSim',
+    title: 'Virtual Medical Simulation',
+    text: 'Created a C++ simulation with OpenGL for interactive medical training, featuring realistic 3D anatomical models and custom shader effects.',
+  },
+  {
+    id: nanoid(),
+    img: humanSegmentation,
+    github: 'https://github.com/franadam/HumanSegmentation',
+    title: 'Deep Learning Medical Image Segmentation',
+    text: 'Optimized a 3D medical image segmentation model using TensorFlow, enhancing diagnostic processes with advanced image processing techniques.',
   },
 ];
