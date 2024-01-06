@@ -3,7 +3,7 @@ import { links } from '@/assets/data';
 
 export const Navbar: FC = (): JSX.Element => {
   return (
-    <nav className="bg-blue-600">
+    <nav className="bg-blue-600 fixed top-0 left-0 right-0">
       <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
         <h2 className="text-3xl text-gray-100 font-bold">
           Fullstack <span className="text-green-300">Engineer</span>
